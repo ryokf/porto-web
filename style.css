@@ -1,0 +1,52 @@
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.banner {
+  /* background-color: #f9f5eb; */
+  background-color: #ccc;
+}
+
+.img-bunder {
+  border-radius: 50% !important;
+}
+
+.skill {
+  background-color: #222;
+  padding-bottom: 50px;
+}
+
+.text-biru {
+  color: #607eaa;
+}
+
+.logo-skill {
+  padding: 10px 15px 20px 15px;
+  border: 1px #f9f5eb solid;
+  border-radius: 20px;
+  transition: 500ms;
+}
+
+.logo-skill:hover{
+  background-color: #ccc;
+}
+
+.logo-skill:hover h2{
+  color: #222 !important;
+}
+
+.portofolio {
+  padding-bottom: 50px;
+  background-color: #ccc;
+  /* height: 1000px; */
+}
+
+.btn-biru {
+  background-color: #607eaa;
+  color: white;
+}
+
+.width-100{
+  width: 150px;
+}
