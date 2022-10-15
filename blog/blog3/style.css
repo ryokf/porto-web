@@ -1,0 +1,76 @@
+body {
+            background-image: url(img/geometric-leaves.webp);
+            /* position: fixed; */
+            transition: all 0.35s ease;
+        }
+
+        header {
+            background-color: #fff;
+            width: 100%;
+            margin: 0 !important;
+            transition: all 0.35s ease;
+        }
+
+        nav.m-0 {
+            margin-top: -7px !important;
+        }
+
+        #tombol-dark {
+            cursor: pointer;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left !important;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Change the link color to #111 (black) on hover */
+        li a:hover {
+            background-color: #fff;
+            color: #333;
+        }
+
+        .bg-abu {
+            background-color: #fff;
+        }
+
+        .container.sec-1 {
+            width: 70% !important;
+            transition: all 0.35s ease;
+        }
+
+        section p {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        aside {
+            width: 25% !important;
+            /* border: 1px solid black; */
+            height: 400px;
+            background-color: #fff;
+            transition: all 0.35s ease;
+        }
+
+        .img-bunder {
+            border-radius: 50%;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
