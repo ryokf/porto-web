@@ -28,10 +28,6 @@ form.addEventListener('submit', e => {
         .catch(error => console.error('Error!', error.message))
 })
 
-// gsap
-gsap.from('.navbar', { duration: 3, ease: "elastic.out", y: -500 });
-
-
 // dark mode
 const tombol_dark = document.getElementById('tombol-dark');
 const link_dark = document.getElementById('link-dark');
