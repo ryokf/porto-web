@@ -33,6 +33,7 @@
 .btn-outline-pink:hover{
     background-color: var(--color1);
     color: white;
+    box-shadow: 1px 1px 10px 3px var(--color1);
 }
 
 .btn-pink{
@@ -43,6 +44,7 @@
     font-family: var(--font);
     font-size: 18px;
     font-weight: 500;
+    transition: var(--trasition);
 }
 
 .btn-pink:hover{
@@ -51,6 +53,11 @@
     border-radius: 0px !important;
     width: 200px;
     font-family: var(--font);
+    box-shadow: 1px 1px 10px 3px var(--color1);
+}
+
+.btn-100{
+    width: 100%;
 }
 
 /* my css */
@@ -58,7 +65,7 @@
 body{
     background-color: #1A1A40;
     width: 100% !important;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .navbar h2, 
@@ -69,7 +76,8 @@ body{
 }
 
 #home{
-    overflow: hidden;
+    overflow-x: hidden;
+    scroll-snap-align: start;
 }
 
 #home h1{
@@ -99,6 +107,10 @@ body{
     right: 10px;
     top: 550px;
     z-index: -1;
+}
+
+#about{
+    scroll-snap-align: start;
 }
 
 #about h1{
@@ -176,13 +188,59 @@ body{
         -2px -2px 1px 1px var(--color1);
 }
 
+#portofolio .wadah-komponen,
+#portofolio2 .wadah-komponen{
+    text-align: right;
+}
+
+#contact{
+    margin-bottom: 100px;
+}
+
+#contact h1,
+#contact p{
+    color: white;
+    font-family: var(--font);
+    font-weight: 700;
+}
+
+#contact hr{
+    border: 1px solid white;
+}
+
+#contact input, 
+#contact textarea{
+    border-radius: 0 !important;
+    background-color: #222;
+    border: 1px solid #222;
+    color: white !important;
+    font-family: var(--font2);
+}
+
+#contact label{
+    color: #777;
+    font-family: var(--font2);
+}
+
 #footer{
     background-color: #333;
+}
+
+#footer h1,
+#footer h2{
+    font-family: var(--font);
+    font-weight: 700; 
+}
+
+#footer p{
+    font-family: var(--font2);
+    font-weight: 400;
 }
 
 #footer a{
     text-decoration: none;
     color: var(--color-secondary);
+    font-family: var(--font2);
 }
 
 /* object */
@@ -191,7 +249,7 @@ body{
     width: 30%;
     position:absolute;
     left: -300px;
-    top: 680px;
+    top: 700px;
     z-index: -1;
 }
 
@@ -206,8 +264,8 @@ body{
 .img-star2{
     width: 5%;
     position:absolute;
-    left: 50px;
-    top: 400px;
+    left: 100px;
+    top: 500px;
     z-index: -1;
 }
 .img-star3{
@@ -248,8 +306,48 @@ body{
     z-index: -1;
 }
 
+.pindah-slide{
+    font-size: 30px;
+    color: white;
+    position: fixed;
+    z-index: 99;
+    left: 3%;
+    cursor: pointer;
+}
+
+.pindah-slide.up{
+    bottom: 60%;
+}
+
+.pindah-slide.down{
+    bottom: 40%;
+}
+
 /* smartphone */
 @media only screen and (max-width: 768px) {
+    body{
+        overflow-y: scroll;
+    }
+
+    .container-scroll{
+        overflow-y:scroll ;
+        scroll-snap-type: y mandatory;
+        height: 100vh;
+    }
+
+    .navbar{
+        background-color: #1A1A40;
+    }
+
+    #home,
+    #about,
+    #portofolio,
+    #portofolio2, 
+    #contact,
+    #footer{
+        scroll-snap-align: start;
+    }
+
     #home .img-cloud1{
         display: none;
     }
@@ -257,5 +355,43 @@ body{
     #home .img-moon{
         display: none;
     }
+
+    #about img{
+        margin-top: 10px;
+    }
+
+    #about p, 
+    #about .kuasai{
+        font-size: 12px;
+    }
+
+    #portofolio hr{
+        display: none;
+    }
+
+    #portofolio h1{
+       margin: 20px !important;
+    }
+
+    #portofolio h3,
+    #portofolio2 h3{
+        margin-top: 10px;
+    }
+
+    #portofolio p,
+    #portofolio2 p{
+        font-size: 12px;
+
+    }
+
+     #portofolio .capt-porto,
+    #portofolio2 .capt-porto{
+        padding: 7px;
+
+    }
+
+    .pindah-slide{
+    display: none;
+}
 
 }

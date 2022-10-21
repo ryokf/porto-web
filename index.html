@@ -4,197 +4,267 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>RyoKF | Homepage</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style/dark.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <h2>RyoKF</h2>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portofolio">portofolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                    </li>
-                </ul>
+    <div class="container-scroll">
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <h2>RyoKF</h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portofolio">Portofolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="home" class="vh-100 d-flex align-items-center">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <p class="text-pink">Hi, my name is</p>
+                        <h1 class="display-2">Ryo Khrisna Fitriawan</h1>
+                        <p>Kami menggabungkan seni dan logika desain untuk membangun perusahaan kami. Ketika otak kanan
+                            bertemu dengan otak kiri,
+                            Ketika kreativitas dan strategi bertemu, desain dengan funsionalitas hadir untuk mendorong
+                            pertumbuhan customer yang
+                            eksponensial dan pengalaman kami yang penting bagi konsumen</p>
+                        <a class="btn btn-pink py-2 me-2 mb-2" href="resume/resume.pdf" target="_blank">resume</a>
+                        <a class="btn btn-outline-pink py-2 mb-2" href="#about">get started</a>
+                    </div>
+                    <div class="col-sm-2 klik-img">
+                        <img src="img/moon.png" alt="" class="img-moon">
+                        <img src="img/cloud1.png" alt="" class="img-cloud1">
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
 
-    <div id="home" class="vh-100 d-flex align-items-center">
-        <div class="container ">
-            <div class="row">
-                <div class="col-sm-8">
-                    <p class="text-pink">Hi, may name is</p>
-                    <h1 class="display-2">Ryo Khrisna Fitriawan</h1>
-                    <p>Kami menggabungkan seni dan logika desain untuk membangun perusahaan kami. Ketika otak kanan
-                        bertemu dengan otak kiri,
-                        Ketika kreativitas dan strategi bertemu, desain dengan funsionalitas hadir untuk mendorong
-                        pertumbuhan customer yang
-                        eksponensial dan pengalaman kami yang penting bagi konsumen</p>
-                    <a class="btn btn-pink py-2 me-2 mb-2" href="resume/resume.pdf" target="_blank">resume</a>
-                    <a class="btn btn-outline-pink py-2 mb-2" href="#about">get started</a>
+        <div id="about" class="vh-100 d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-5" data-aos="fade-right" data-aos-duration="1000">
+                        <h1 class="text-white">ABOUT ME</h1>
+                    </div>
+
                 </div>
-                <div class="col-sm-2 klik-img">
-                    <img src="img/moon.png" alt="" class="img-moon">
-                    <img src="img/cloud1.png" alt="" class="img-cloud1">
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-5" data-aos="fade-right" data-aos-duration="1000">
+                        <p>Halo, nama saya adalah Ryo Khrisna Fitriawan dan saya suka membangun sebuah website dan
+                            aplikasi
+                            yang indah.
+                            ketertarikan saya pada websit bermula pada tahun 2021 ketika saya memutuskan untuk
+                            mendaftar
+                            kuliah di jurusan teknik
+                            informatika. pada tahun 2021 saya lulus dari jenjang SMA dan memutuskan untuk gap year,
+                            pada
+                            waktu satu tahun itulah
+                            saya belajar otodidak mengenai website</p>
+                        <p class="">berikut adalah beberapa teknologi yang sudah saya kuasai : </p>
+                        <div class="row">
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-3">
+                                <div class="kuasai">HTML</div>
+                                <div class="kuasai">CSS</div>
+                                <div class="kuasai">JavaScript</div>
+                            </div>
+                            <div class="col-sm-5">
+                                <div class="kuasai">Bootstrap</div>
+                                <div class="kuasai">PHP</div>
+                                <div class="kuasai">Codeigniter</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-5 d-flex justify-content-center align-items-center my-foto" data-aos="zoom-in"
+                        data-aos-duration="1000">
+                        <img src="img/myself.JPG" alt="">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div id="about" class="vh-100 d-flex align-items-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-1"></div>
-                <div class="col-sm-5">
-                    <h1 class="text-white">ABOUT ME</h1>
+        <div id="portofolio" class="vh-100 d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1 class="my-5 text-center">My portofolio</h1>
+                        <hr class="my-5">
+                    </div>
                 </div>
-
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-5" data-aos="zoom-in" data-aos-duration="1000">
+                        <img src="img/porto_ngapain.jpg" alt="">
+                    </div>
+                    <div class="col-sm-5">
+                        <h3>Ngapain - To Do List</h3>
+                        <div class="capt-porto">
+                            <p data-aos="fade-right" data-aos-duration="1000">Ngapain ToDoList adalah sebuah aplikasi to
+                                do list dimana kita bukan hanya sekedar
+                                mencatat
+                                kegiatan-kegiatan yang akan
+                                kita lakukan, tetapi kita juga dapat membagikan kegiatan ke pengguna lain. dengan
+                                begitu
+                                kita
+                                dapat melakukan kegiatan
+                                tersebut bersama</p>
+                        </div>
+                        <div class="wadah-komponen d-flex justify-content-evenly align-items-center">
+                            <span class="text-secondary">Bootstrap</span>
+                            <span class="text-secondary">Codeigniter</span>
+                            <span class="text-secondary">AJAX</span>
+                            <a href="https://github.com/ryokf/Ngapain-ToDoList" target="_blank"> <i
+                                    class="bi bi-github komponen mx-2"></i></a>
+                            <a href="https://drive.google.com/file/d/1fxI1y6ShL6VsNShZwn6nA_VxmAB-gQYl/view?usp=sharing"
+                                target="_blank">
+                                <i class="bi bi-cloud-arrow-down-fill komponen mx-2"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row">
-                <div class="col-sm-1"></div>
-                <div class="col-sm-5">
-                    <p>Halo, nama saya adalah Ryo Khrisna Fitriawan dan saya suka membangun sebuah website dan aplikasi
-                        yang indah.
-                        ketertarikan saya pada websit bermula pada tahun 2021 ketika saya memutuskan untuk mendaftar
-                        kuliah di jurusan teknik
-                        informatika. pada tahun 2021 saya lulus dari jenjang SMA dan memutuskan untuk gap year, pada
-                        waktu satu tahun itulah
-                        saya belajar otodidak mengenai website</p>
-                    <p class="">berikut adalah beberapa teknologi yang sudah saya kuasai : </p>
+        </div>
+
+        <div id="portofolio2" class="vh-100 d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-5" data-aos="zoom-in" data-aos-duration="1000">
+                        <img src="img/porto_tigasulung.png" alt="">
+                    </div>
+                    <div class="col-sm-5">
+                        <h3>TigaSulung website</h3>
+                        <div class="capt-porto">
+                            <p data-aos="fade-right" data-aos-duration="1000">Sebuah website portofolio untuk salah satu
+                                creative agency di kota semarang</p>
+                        </div>
+                        <div class="wadah-komponen d-flex justify-content-evenly align-items-center">
+                            <span class="text-secondary">Bootstrap</span>
+                            <span class="text-secondary">Javascript</span>
+                            <span class="text-secondary">PHP</span>
+                            <a href="https://github.com/ryokf/Ngapain-ToDoList" target="_blank"> <i
+                                    class="bi bi-github komponen mx-2"></i></a>
+                            <a href="http://TigaSulung.epizy.com" target="_blank">
+                                <i class="bi bi-eye-fill komponen mx-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="d-flex align-items-center vh-100">
+            <div class="container">
+                <div class="row">
+                    <h1 class="text-center">Get in Touch</h1>
+                    <p class="text-center">Hubungi kami lewat form ini untuk pemesanan atau sekedar memberikan saran,
+                        kami akan balas pesan
+                        anda secepat mungkin
+                        melalui email yang anda tulis, harap masukkan alamat email yang sesuai</p>
+                    <hr class="my-3">
+                </div>
+                <form action="">
                     <div class="row">
-                        <div class="col-sm-1"></div>
-                        <div class="col-sm-3">
-                            <div class="kuasai">HTML</div>
-                            <div class="kuasai">CSS</div>
-                            <div class="kuasai">JavaScript</div>
+                        <div class="col-sm-6">
+                            <div class="mb-4">
+                                <input type="text" class="form-control" id="nama" placeholder="Nama">
+                            </div>
                         </div>
-                        <div class="col-sm-5">
-                            <div class="kuasai">Bootstrap</div>
-                            <div class="kuasai">PHP</div>
-                            <div class="kuasai">Codeigniter</div>
+                        <div class="col-sm-6">
+                            <div class="mb-4">
+                                <input type="email" class="form-control" id="email" placeholder="Email">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-1"></div>
-                <div class="col-sm-5 d-flex justify-content-center align-items-center my-foto">
-                    <img src="img/myself.JPG" alt="">
-                </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="">
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="subjek">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-floating my-4">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                    style="height: 100px"></textarea>
+                                <label for="floatingTextarea2 text-secondary">Isi pesan</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <button type="submit" class="btn btn-outline-pink btn-100">Submit</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
-    </div>
 
-    <div id="portofolio" class="vh-100 d-flex align-items-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h1 class="my-5 text-center">My portofolio</h1>
-                    <hr class="my-5">
-                </div>
-            </div>
-            <div class="row">
+        <footer id="footer">
+            <div class="row p-5">
                 <div class="col-sm-1"></div>
-                <div class="col-sm-5">
-                    <img src="img/porto_ngapain.jpg" alt="">
+                <div class="col-sm-2 mb-3">
+                    <h1 class="text-white">RyoKF</h1>
                 </div>
-                <div class="col-sm-5">
-                    <h3>Ngapain - To Do List</h3>
-                    <div class="capt-porto">
-                        <p>Ngapain ToDoList adalah sebuah aplikasi to do list dimana kita bukan hanya sekedar mencatat
-                            kegiatan-kegiatan yang akan
-                            kita lakukan, tetapi kita juga dapat membagikan kegiatan ke pengguna lain. dengan begitu
-                            kita
-                            dapat melakukan kegiatan
-                            tersebut bersama</p>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2 my-3">
+                    <div>
+                        <h2 class="text-white">Brand</h2>
+                        <div><a href="">Home</a></div>
+                        <div><a href="">About</a></div>
+                        <div><a href="">Portofolio</a></div>
+                        <div><a href="">Contact</a></div>
+                    </div>
+                </div>
+                <div class="col-sm-2 my-3">
+                    <div>
+                        <h2 class="text-white ">Social</h2>
+                        <div><a href="">Instagram</a></div>
+                        <div><a href="">Linkedin</a></div>
+                        <div><a href="">YouTube</a></div>
+                    </div>
+                </div>
+                <div class="col-sm-2 my-3">
+                    <div>
+                        <h2 class="text-white ">Contact</h2>
+                        <div><a href="">Address : perumahan kampoeng semawis blok f-25</a></div>
+                        <div><a href="">Email : Ryokhrisnaf@gmail.com</a></div>
+                        <div><a href="">Phone : +62-896-4776-7389</a></div>
                     </div>
                 </div>
             </div>
-            <div class="row text-center my-5 panah-bawah">
-                <a href="#portofolio2"> <i class="bi bi-caret-down-fill"></i></a>
-            </div>
-        </div>
-    </div>
-
-    <div id="portofolio2" class="vh-100 d-flex align-items-center">
-        <div class="container">
-            <div class="row text-center my-5 py-5 panah-bawah">
-                <a href="#portofolio"> <i class="bi bi-caret-up-fill"></i></a>
-            </div>
             <div class="row">
-                <div class="col-sm-1"></div>
-                <div class="col-sm-5">
-                    <img src="img/porto_tigasulung.png" alt="">
-                </div>
-                <div class="col-sm-5">
-                    <h3>Ngapain - To Do List</h3>
-                    <div class="capt-porto">
-                        <p>Sebuah website portofolio untuk salah satu creative agency di kota semarang</p>
-                    </div>
-                </div>
+                <p class="text-center text-secondary">© 2022 copyright all right reserved | Designed by <a
+                        href="https://instagram.com/ryo.kf" class="text-white">@Ryo.kf</a> </p>
             </div>
-            <div class="row text-center my-5">
-                <a href="#portofolio2" class="panah-bawah"> <i class="bi bi-caret-down-fill"></i></a>
-            </div>
-        </div>
+        </footer>
     </div>
-
-    <footer id="footer">
-        <div class="row p-5">
-            <div class="col-sm-4 text-center">
-                <h1 class="text-white">RyoKF</h1>
-            </div>
-            <div class="col-sm-2">
-                <div>
-                    <h2 class="text-white ">Brand</h2>
-                    <div><a href="">Home</a></div>
-                    <div><a href="">About</a></div>
-                    <div><a href="">Portofolio</a></div>
-                    <div><a href="">Contact</a></div>
-                </div>
-            </div>
-            <div class="col-sm-2">
-                <div>
-                    <h2 class="text-white ">Social</h2>
-                    <div><a href="">Instagram</a></div>
-                    <div><a href="">Linkedin</a></div>
-                    <div><a href="">YouTube</a></div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div>
-                    <h2 class="text-white ">Contact</h2>
-                    <div><a href="">Address : perumahan kampoeng semawis blok f-25</a></div>
-                    <div><a href="">Email : Ryokhrisnaf@gmail.com</a></div>
-                    <div><a href="">Phone : +62-896-4776-7389</a></div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <p class="text-center text-secondary">© 2022 copyright all right reserved | Designed by <a
-                    href="https://instagram.com/ryo.kf" class="text-white">@Ryo.kf</a> </p>
-        </div>
-    </footer>
-
     <img src="img/star1.png" alt="" class="img-star1">
     <img src="img/star1.png" alt="" class="img-star2">
     <img src="img/star1.png" alt="" class="img-star3">
@@ -204,28 +274,19 @@
     <img src="img/comet1.png" alt="" class="img-comet2">
     <img src="img/moon1.png" alt="" class="img-planet">
 
+    <a class="pindah-atas"><i class="bi bi-caret-up-fill pindah-slide up"></i></a>
+    <a class="pindah-bawah"><i class="bi bi-caret-down-fill pindah-slide down"></i></a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-    <script>
-        let moon = document.querySelector("#home .klik-img");
-        moon.addEventListener('click', function () {
-            console.log('hai');
-        })
-
-        let body = document.querySelector('body');
-        body.addEventListener('scroll', function () {
-            console.log('hai');
-        })
-        gsap.from('#home .img-moon', { duration: 10, rotate: 360, repeat: -1, ease: "none" });
-        gsap.from('#home .img-cloud1', { duration: 1, y: 10, repeat: -1, ease: "none", yoyo: true });
-        gsap.from('.img-planet', { duration: 15, rotate: -360, repeat: -1, ease: "none" });
-        gsap.from('.panah-bawah', { duration: 1, y: 10, repeat: -1, ease: "none", yoyo: true });
-
-
-    </script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
