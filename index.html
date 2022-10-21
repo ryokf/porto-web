@@ -187,23 +187,24 @@
                         melalui email yang anda tulis, harap masukkan alamat email yang sesuai</p>
                     <hr class="my-3">
                 </div>
-                <form action="">
+                <form name="submit-to-google-sheet" method="post">
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="mb-4">
-                                <input type="text" class="form-control" id="nama" placeholder="Nama">
+                                <input type="text" class="form-control" id="nama" placeholder="Nama" name="nama">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="mb-4">
-                                <input type="email" class="form-control" id="email" placeholder="Email">
+                                <input type="email" class="form-control" id="email" placeholder="Email" name="email">
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="">
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="subjek">
+                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="subjek"
+                                    name="subjek">
                             </div>
                         </div>
                     </div>
@@ -211,14 +212,18 @@
                         <div class="col-sm-12">
                             <div class="form-floating my-4">
                                 <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                                    style="height: 100px"></textarea>
+                                    style="height: 100px" name="pesan"></textarea>
                                 <label for="floatingTextarea2 text-secondary">Isi pesan</label>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-12">
-                            <button type="submit" class="btn btn-outline-pink btn-100">Submit</button>
+                            <button type="submit" class="btn btn-outline-pink btn-100 btn-kirim">Submit</button>
+                            <button class="btn btn-primary btn-100 d-none btn-selesai" type="button" disabled>
+                                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                Loading...
+                            </button>
                         </div>
                     </div>
                 </form>
@@ -275,6 +280,27 @@
 
     <a class="pindah-atas"><i class="bi bi-caret-up-fill pindah-slide up"></i></a>
     <a class="pindah-bawah"><i class="bi bi-caret-down-fill pindah-slide down"></i></a>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyK0hexyBc-2NMN81kG2lW_cedmg59aFWhDHiQsvBdZ01H8RDXgyzeTMom8OYqGO_wLlw/exec'
+        const form = document.forms['submit-to-google-sheet'];
+
+        const btn_kirim = document.querySelector('.btn-kirim');
+        const btn_selesai = document.querySelector('.btn-selesai');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            btn_kirim.classList.toggle('d-none');
+            btn_selesai.classList.toggle('d-none');
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    btn_kirim.classList.toggle('d-none');
+                    btn_selesai.classList.toggle('d-none');
+                    console.log('Success!', response)
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
