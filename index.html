@@ -296,6 +296,7 @@
                 .then(response => {
                     btn_kirim.classList.toggle('d-none');
                     btn_selesai.classList.toggle('d-none');
+                    form.reset();
                     console.log('Success!', response)
                 })
                 .catch(error => console.error('Error!', error.message))
