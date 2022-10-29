@@ -70,3 +70,14 @@ tombol_burger.addEventListener('click', function (){
     gsap.from("nav", {opacity:0 ,y:-100, duration: 1});
 })
 
+window.onscroll= function(){
+    const header = document.querySelector('.header')
+    const fixedNav = header.offsetTop;
+
+    if(fixedNav < window.scrollY){
+        header.classList.add('bg-transparent');
+    } else {
+        header.classList.remove('bg-transparent');
+    }
+}
+
