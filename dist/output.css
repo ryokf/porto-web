@@ -647,6 +647,10 @@ video {
   z-index: -20;
 }
 
+.order-last {
+  order: 9999;
+}
+
 .col-start-1 {
   grid-column-start: 1;
 }
@@ -698,11 +702,6 @@ video {
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
-}
-
-.my-40 {
-  margin-top: 10rem;
-  margin-bottom: 10rem;
 }
 
 .my-5 {
@@ -874,6 +873,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-end {
@@ -1599,6 +1602,10 @@ body{
     right: 0px;
   }
 
+  .lg\:order-first {
+    order: -9999;
+  }
+
   .lg\:flex {
     display: flex;
   }
@@ -1668,6 +1675,10 @@ body{
 
   .lg\:pt-4 {
     padding-top: 1rem;
+  }
+
+  .lg\:text-left {
+    text-align: left;
   }
 
   .lg\:text-3xl {
