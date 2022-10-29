@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    /* font-family: 'Sora', sans-serif; */
+}
+
+/* p{
+    font
+} */
+
+.btn-primary1{
+    @apply bg-primary1 text-white px-8 py-2 rounded-md shadow-md border border-primary1
+    font-semibold transition duration-300 hover:opacity-90 hover:scale-95
+}
+
+.btn-outline-primary1{
+    @apply border border-primary1 text-primary1 px-8 py-2 rounded-md shadow-md font-semibold transition duration-300 hover:opacity-90 hover:scale-95 hover:bg-primary1 hover:text-white
+}
+
+.btn-primary2{
+    @apply bg-primary2 text-white px-10 py-2 rounded-md shadow-md font-semibold transition duration-300 hover:opacity-90 hover:scale-95
+}
+
+.btn-outline-primary2{
+    @apply border border-primary2 text-primary2 px-10 py-2 rounded-md shadow-md font-semibold transition duration-300 hover:opacity-90 hover:scale-95 hover:bg-primary2 hover:text-white
+}
+
+.btn-primary3{
+    @apply bg-primary3 text-white px-10 py-2 rounded-md shadow-md font-semibold transition duration-300 hover:opacity-90 hover:scale-95
+}
+
+.btn-outline-primary3{
+    @apply border border-primary3 text-primary3 px-10 py-2 rounded-md shadow-md font-semibold transition duration-300 hover:opacity-90 hover:scale-95 hover:bg-primary3 hover:text-white
+}
+
+.display-1{
+    @apply text-6xl font-bold
+}
+.display-2{
+    @apply text-5xl font-bold
+}
+.display-3{
+    @apply text-4xl font-bold
+}
+.display-4{
+    @apply text-3xl font-bold
+}
+.display-5{
+    @apply text-2xl font-bold
+}
+.display-6{
+    @apply text-xl font-bold
+}
+
+.input-group span{
+     @apply block
+}
+
+.input-group input{
+    @apply block mx-auto border-2 font-light rounded-md w-full p-1 transition duration-300 focus:outline-none focus:ring-1 focus:ring-primary1 focus:border-0 focus:rounded-md focus:shadow focus:shadow-primary1
+}
+
+.input-group textarea{
+    @apply border-2 rounded-md w-full p-1 transition duration-300 focus:outline-none focus:ring-1 focus:ring-primary1 focus:border-0 focus:rounded-md focus:shadow focus:shadow-primary1
+}
+
+.burger-active-top{
+    @apply rotate-45  
+}
+
+.burger-active-bottom{
+    @apply -rotate-45  
+}
