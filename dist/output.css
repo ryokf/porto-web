@@ -607,8 +607,8 @@ video {
   position: relative;
 }
 
-.right-\[13\%\] {
-  right: 13%;
+.left-\[13\%\] {
+  left: 13%;
 }
 
 .top-1\/3 {
@@ -633,10 +633,6 @@ video {
 
 .-left-\[100\] {
   left: -100;
-}
-
-.left-\[13\%\] {
-  left: 13%;
 }
 
 .z-\[999\] {
@@ -1602,8 +1598,12 @@ body{
     position: relative;
   }
 
-  .lg\:right-0 {
-    right: 0px;
+  .lg\:right-\[13\%\] {
+    right: 13%;
+  }
+
+  .lg\:left-0 {
+    left: 0px;
   }
 
   .lg\:order-first {
