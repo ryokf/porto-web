@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth ">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -14,24 +14,24 @@
 </head>
 <!-- sm:bg-red-200 md:bg-blue-200 lg:bg-green-200 -->
 
-<body class="font-sora">
-    <div class="overflow-x-hidden">
+<body class="font-sora ">
+    <div class="overflow-x-hidden dark:bg-neutral-800">
         <!-- nav start -->
         <header class="w-full">
             <div class="container">
-                <div class="header w-full px-4 flex fixed opacity-90 bg-white mx-auto z-[999] md:px-20 lg:px-40">
+                <div class="header w-full px-4 flex fixed opacity-90 bg-white mx-auto z-[999] md:px-20 lg:px-40 dark:bg-neutral-700">
                     <div class="w-1/2 order-last lg:order-first">
-                        <h2 class="display-6 font-sora my-4 text-right text-primary1 lg:text-3xl lg:text-left">RyoKF
+                        <h2 class="display-6 font-sora my-4 text-right text-primary1 lg:text-3xl lg:text-left dark:text-white">RyoKF
                         </h2>
                     </div>
                     <button
                         class="w-1/2 flex flex-col justify-center items-start burger cursor-pointer group lg:invisible">
                         <div class="transition duration-500">
-                            <hr class="origin-left transition duration-500 border border-primary1 w-5 rounded-full">
+                            <hr class="origin-left transition duration-500 border border-primary1 w-5 rounded-full dark:border-white">
                         </div>
                         <span class="mb-3"></span>
                         <div class="">
-                            <hr class="origin-left transition duration-500 border border-primary1 w-5 rounded-full">
+                            <hr class="origin-left transition duration-500 border border-primary1 w-5 rounded-full dark:border-white">
                         </div>
                     </button>
                     <nav
@@ -39,22 +39,27 @@
                         <ul
                             class="flex flex-col justify-evenly p-4 rounded-lg lg:flex-row lg:py-0 lg:h-full lg:items-center">
                             <a href="#home">
-                                <li class="hover:text-primary1 cursor-pointer mx-2">Home</li>
+                                <li class="hover:text-primary1 cursor-pointer mx-2 dark:lg:text-white">Home</li>
                             </a>
                             <a href="#about">
-                                <li class="hover:text-primary1 cursor-pointer mx-2">About</li>
+                                <li class="hover:text-primary1 cursor-pointer mx-2 dark:lg:text-white">About</li>
                             </a>
                             <a href="#portofolio">
-                                <li class="hover:text-primary1 cursor-pointer mx-2">Portofolio</li>
+                                <li class="hover:text-primary1 cursor-pointer mx-2 dark:lg:text-white">Portofolio</li>
                             </a>
                             <a href="#project">
-                                <li class="hover:text-primary1 cursor-pointer mx-2">project</li>
+                                <li class="hover:text-primary1 cursor-pointer mx-2 dark:lg:text-white">project</li>
                             </a>
                             <a href="#gallery">
-                                <li class="hover:text-primary1 cursor-pointer mx-2">Gallery</li>
+                                <li class="hover:text-primary1 cursor-pointer mx-2 dark:lg:text-white">Gallery</li>
                             </a>
                             <a href="#contact">
-                                <li class="hover:text-primary1 cursor-pointer mx-2">Contact</li>
+                                <li class="hover:text-primary1 cursor-pointer mx-2 dark:lg:text-white">Contact</li>
+                            </a>
+                            <a>
+                                <li class="hover:text-primary1 cursor-pointer mx-2 dark:lg:text-white"><button class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" fill="currentColor" class="bi bi-moon-fill mr-1" viewBox="0 0 16 16">
+  <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+</svg>Mode</button></li>
                             </a>
                         </ul>
                     </nav>
@@ -64,17 +69,17 @@
         <!-- nav end -->
 
         <!-- hero section start -->
-        <section id="home" class="px-4">
+        <section id="home" class="px-4 ">
             <div class="container h-screen flex items-center">
                 <div class="mx-auto max-w-3xl md:w-4/5 ">
                     <p class="font-bold text-primary1 fisrt">Halo 👋, nama saya</p>
-                    <h2 class="display-2 text-dark mb-2 md:display-1">Ryo Khrisna Fitriawan</h2>
+                    <h2 class="display-2 text-dark mb-2 md:display-1 dark:text-white">Ryo Khrisna Fitriawan</h2>
                     <p class="mb-4 mt-2 text-secondary font-semibold text-lg font-sans second">Programmer <span
                             class="text-primary1">|
                             Designer
                         </span>
                     </p>
-                    <p class="font-medium font-sans third">saya adalah seorang programmer yang juga menekuni bidang
+                    <p class="font-medium font-sans third dark:text-white">saya adalah seorang programmer yang juga menekuni bidang
                         desain, sehingga
                         saya mampu
                         menciptakan website dengan fungsionalitas tinggi dan juga indah.</p>
@@ -88,10 +93,10 @@
                 </div>
                 <div class="relative top-0 -left-32 kotak-blur">
                     <div
-                        class="h-40 rounded-full blur-[150px] aspect-square bg-primary2 absolute bottom-0 -right-[100] -z-10">
+                        class="h-40 rounded-full blur-[150px] aspect-square bg-primary2 absolute bottom-0 -right-[100] -z-10 dark:hidden">
                     </div>
                     <div
-                        class="h-40 rounded-full blur-[150px] aspect-square bg-primary1 absolute top-0 -left-[100] -z-10">
+                        class="h-40 rounded-full blur-[150px] aspect-square bg-primary1 absolute top-0 -left-[100] -z-10 dark:hidden">
                     </div>
 
 
@@ -100,10 +105,10 @@
         <!-- hero section end -->
 
         <!-- about section start -->
-        <section id="about" class="px-4">
+        <section id="about" class="px-4 ">
             <div class="container h-screen flex items-center mx-auto">
                 <div class="w-full mx-auto">
-                    <h2 class="display-3 text-center lg:hidden">About <span class="text-primary1">me</span></h2>
+                    <h2 class="display-3 text-center lg:hidden dark:text-white">About <span class="text-primary1">me</span></h2>
                     <hr class="mb-5 mt-5 w-20 mx-auto border border-primary1 lg:hidden">
                     <div class="w-full lg:flex lg:justify-center lg:items-center">
                         <div class="w-full lg:w-[35%] ">
@@ -133,11 +138,11 @@
                             </div>
                         </div>
                         <div class="w-full mx-auto max-w-3xl lg:w-[60%]" data-aos="fade-left" data-aos-duration="1000">
-                            <h2 class="text-[0px] m-0 font-bold invisible lg:text-4xl lg:visible lg:pt-4">About <span
+                            <h2 class="text-[0px] m-0 font-bold invisible lg:text-4xl lg:visible lg:pt-4 dark:text-white">About <span
                                     class="text-primary1">me</span>
                             </h2>
                             <hr class="mb-5 mt-5 w-full border border-primary1 invisible lg:visible">
-                            <p class="my-4 font-medium text-justify"> <span class="ml-6"> Hai</span>,
+                            <p class="my-4 font-medium text-justify dark:text-white"> <span class="ml-6"> Hai</span>,
                                 nama saya
                                 adalah Ryo
                                 Khrisna Fitriawan.
@@ -148,7 +153,7 @@
                                 pada
                                 waktu satu tahun itulah
                                 saya belajar otodidak mengenai website.</p>
-                            <h4 class="display-6 text-center">Let's be friend</h4>
+                            <h4 class="display-6 text-center dark:text-white">Let's be friend</h4>
                             <div class="flex justify-around w-4/5 mx-auto mt-2">
                                 <a href="https://www.instagram.com/ryo.kf/" target="_blank"
                                     class="social border-2 p-2 rounded-full text-secondary hover:bg-primary1 hover:text-white"><svg
@@ -199,10 +204,10 @@
         <!-- about section end -->
 
         <!-- portofolio section start -->
-        <section id="portofolio" class="px-4 mt-32">
+        <section id="portofolio" class="px-4 pt-32 ">
             <div class="container mx-auto md:flex md md:items-center">
                 <div class="w-full">
-                    <h2 class="display-3 text-center my-4">My Portofol<span class="text-primary1">io</span></h2>
+                    <h2 class="display-3 text-center my-4 dark:text-white">My Portofol<span class="text-primary1">io</span></h2>
                     <hr class="mb-5 mt-5 w-20 mx-auto border border-primary1">
                     <div class="w-full mx-auto ">
                         <div class="md:flex md:justify-center md:mb-40 md:mt-20">
@@ -212,10 +217,10 @@
                             <div class="" data-aos="fade-left" data-aos-duration="1000">
                                 <div
                                     class="border border-primary1 rounded-lg m-2 p-2 shadow-md text-right mx-auto max-w-xl">
-                                    <h6 class="display-6 mb-2">
+                                    <h6 class="display-6 mb-2 dark:text-white">
                                         Ngapain To Do List
                                     </h6>
-                                    <p class="font-medium text-justify">Ngapain ToDoList adalah sebuah aplikasi to do
+                                    <p class="font-medium text-justify dark:text-white">Ngapain ToDoList adalah sebuah aplikasi to do
                                         list
                                         dimana
                                         kita bukan hanya sekedar mencatat kegiatan-kegiatan yang akan
@@ -257,10 +262,10 @@
                             <div class="" data-aos="fade-right" data-aos-duration="1000">
                                 <div
                                     class="border border-primary1 rounded-lg m-2 p-2 shadow-md text-right max-w-xl mx-auto">
-                                    <h6 class="display-6 mb-2">
+                                    <h6 class="display-6 mb-2 dark:text-white">
                                         Weather app
                                     </h6>
-                                    <p class="font-medium text-justify">suatu aplikasi untuk mengetahui ramalan cuaca
+                                    <p class="font-medium text-justify dark:text-white">suatu aplikasi untuk mengetahui ramalan cuaca
                                         dari berbagai lokasi di dunia</p>
                                 </div>
                                 <div class="flex justify-around text-secondary max-w-xl mx-auto">
@@ -296,17 +301,17 @@
         <section id="project" class="">
             <div class="container mx-auto h-screen mt-40 lg:flex lg:items-center">
                 <div class="w-full">
-                    <h3 class="display-3 text-center my-5">Simple Proje<span class="text-primary1">ct</span></h3>
+                    <h3 class="display-3 text-center my-5 dark:text-white">Simple Proje<span class="text-primary1">ct</span></h3>
                     <hr class="mb-5 mt-3 w-20 mx-auto border border-primary1">
                     <div class="grid grid-cols-2 gap-2 px-2 lg:grid-cols-3" data-aos="fade-down"
                         data-aos-duration="1000">
                         <a href="https://github.com/ryokf/suwit-jawa" target="_blank"
                             class="group transition duration-300 hover:-translate-y-3 max-w-md">
                             <div
-                                class="mx-auto rounded-md overflow-x-hidden border-2 border-primary1 shadow-md max-w-md bg-white">
+                                class="mx-auto rounded-md overflow-x-hidden border-2 border-primary1 shadow-md max-w-md bg-white dark:bg-neutral-700">
                                 <img src="dist/img/suwit-jawa.png" alt="project suwit jawa">
-                                <h6 class="text-lg font-semibold p-2">Suwit Jawa game</h6>
-                                <p class="px-2 pb-2 font-medium text-sm md:text-base">Permainan simple bernama suwit
+                                <h6 class="text-lg font-semibold p-2 dark:text-white">Suwit Jawa game</h6>
+                                <p class="px-2 pb-2 font-medium text-sm md:text-base dark:text-white">Permainan simple bernama suwit
                                     jawa
                                     yang
                                     melawan bot. Project ini hasil menonton tutorial Channel WPU
@@ -320,10 +325,10 @@
                         <a href="https://github.com/ryokf/Ryo-Homepage-v3" target="_blank"
                             class="group transition duration-300 hover:-translate-y-3 max-w-md">
                             <div
-                                class="mx-auto rounded-md overflow-hidden border-2 border-primary1 shadow-md max-w-md bg-white">
+                                class="mx-auto rounded-md overflow-hidden border-2 border-primary1 shadow-md max-w-md bg-white dark:bg-neutral-700">
                                 <img src="dist/img/project-ryo-v3.png" alt="project homepage v3">
-                                <h6 class="text-lg font-semibold p-2">RyoKF Homepage v3</h6>
-                                <p class="px-2 pb-2 font-medium text-sm md:text-base">website portofolio saya yang
+                                <h6 class="text-lg font-semibold p-2 dark:text-white">RyoKF Homepage v3</h6>
+                                <p class="px-2 pb-2 font-medium text-sm md:text-base dark:text-white">website portofolio saya yang
                                     ketiga
                                     dan
                                     dibuat menggunakan bootstrap
@@ -337,10 +342,10 @@
                         <a href="https://github.com/ryokf/matkul-pbw-tugas-5" target="_blank"
                             class="group transition duration-300 hover:-translate-y-3 max-w-md">
                             <div
-                                class="mx-auto rounded-md overflow-hidden border-2 border-primary1 shadow-md max-w-md bg-white">
+                                class="mx-auto rounded-md overflow-hidden border-2 border-primary1 shadow-md max-w-md bg-white dark:bg-neutral-700">
                                 <img src="dist/img/porto_tigasulung.png" alt="project tugas">
-                                <h6 class="text-lg font-semibold p-2">Website TigaSulung</h6>
-                                <p class="px-2 pb-2 font-medium text-sm md:text-base">Sebuah website portofolio untuk
+                                <h6 class="text-lg font-semibold p-2 dark:text-white">Website TigaSulung</h6>
+                                <p class="px-2 pb-2 font-medium text-sm md:text-base dark:text-white">Sebuah website portofolio untuk
                                     salah satu
                                     creative
                                     agency di kota semarang
@@ -363,8 +368,8 @@
         <section id="gallery" class="">
             <div class=" container mx-auto">
                 <div class="w-full">
-                    <h3 class="display-3 text-center mb-2">Gallery</h3>
-                    <p class="text-center font-medium max-w-xl mx-auto px-1">Selain menatap monitor seharian, terkadang
+                    <h3 class="display-3 text-center mb-2 dark:text-white">Gallery</h3>
+                    <p class="text-center font-medium max-w-xl mx-auto px-1 dark:text-white">Selain menatap monitor seharian, terkadang
                         saya
                         juga
                         menatap
@@ -374,12 +379,12 @@
                     <div class="p-2 grid grid-cols-2 mx-auto gap-2 md:grid-cols-4 md:px-4">
                         <div
                             class="font-medium flex items-end col-start-1 row-start-2 md:col-start-4 md:row-start-2 md:items-start">
-                            <div class="">do you like my
+                            <div class="dark:text-white">do you like my
                                 photo?
                             </div>
                         </div>
                         <div class="flex font-medium text-center col-start-2 row-start-3 md:col-start-2 md:row-start-2">
-                            <div class="m-auto">
+                            <div class="m-auto dark:text-white">
                                 Follow <a href="https://www.instagram.com/ryo.kf/" target="_blank"
                                     class="hover:text-primary1">@ryo.kf</a>
                             </div>
@@ -467,8 +472,8 @@
         <section id="contact" class="">
             <div class=" container h-screen flex items-center mx-auto">
                 <div class="w-full mx-auto">
-                    <h3 class="display-3 text-center mb-2">Get In Touch</h3>
-                    <p class="text-center max-w-4xl mx-auto px-1">Hubungi saya lewat form ini jika ada pertanyaan atau
+                    <h3 class="display-3 text-center mb-2 dark:text-white">Get In Touch</h3>
+                    <p class="text-center max-w-4xl mx-auto px-1 dark:text-white">Hubungi saya lewat form ini jika ada pertanyaan atau
                         sekedar
                         memberikan
                         saran, saya akan balas pesan anda
@@ -478,18 +483,18 @@
                     <div class="px-4 max-w-6xl mx-auto">
                         <form name="submit-to-google-sheet" method="post">
                             <label for="email" class="input-group mx-auto">
-                                <span>Email</span>
+                                <span class="dark:text-white">Email</span>
                                 <input id="email" name="email" type="email" data-aos="fade-left"
-                                    data-aos-duration="1000">
+                                    data-aos-duration="1000" class="dark:bg-neutral-700 dark:text-white">
                             </label>
                             <label for="name" class="input-group">
-                                <span>nama</span>
-                                <input id="name" name="nama" type="text" data-aos="fade-right" data-aos-duration="1000">
+                                <span class="dark:text-white">nama</span>
+                                <input id="name" name="nama" type="text" data-aos="fade-right" data-aos-duration="1000" class="dark:bg-neutral-700  dark:text-white">
                             </label>
                             <label for="pesan" class="input-group">
-                                <span>Pesan</span>
+                                <span class="dark:text-white">Pesan</span>
                                 <textarea type="text" id="pesan" name="pesan" data-aos="fade-left"
-                                    data-aos-duration="1000"></textarea>
+                                    data-aos-duration="1000" class="dark:bg-neutral-700  dark:text-white"></textarea>
                             </label>
                             <button type="submit" class="btn-kirim btn-outline-primary1 mx-auto block my-2"
                                 data-aos="fade-right" data-aos-duration="1000">Kirim</button>
